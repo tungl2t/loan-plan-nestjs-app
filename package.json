@@ -6,6 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "postinstall": "prisma generate",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
@@ -27,7 +28,8 @@
     "@prisma/client": "^5.16.2",
     "mongoose": "^8.5.0",
     "reflect-metadata": "^0.2.0",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "@vercel/node": "^3.2.2"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",

@@ -36,8 +36,6 @@ Before running the application, ensure you have the following installed:
 
    Replace `your-database-name` with the name of your MongoDB database.
 
-   ```
-
 3. **Start the Application**
 
    Start the development server:

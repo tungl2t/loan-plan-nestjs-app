@@ -2,7 +2,7 @@ import { Body, Controller, Get, Post } from '@nestjs/common';
 import { LoanPlan } from '@prisma/client';
 
 import { LoanPlanService } from './loan-plan.service';
-import { LoanPlanDto } from './dtos/loan-plan.dto';
+import { BulkActionDto } from './dtos/bulk-action.dto';
 
 @Controller('loan-plan')
 export class LoanPlanController {
@@ -14,7 +14,7 @@ export class LoanPlanController {
   }
 
   @Post('bulk-action')
-  async bulkAction(@Body() loanPlans: LoanPlanDto[]): Promise<LoanPlan[]> {
-    return this.loanPlanService.bulkAction(loanPlans);
+  async bulkAction(@Body() bulkActionDto: BulkActionDto): Promise<LoanPlan[]> {
+    return this.loanPlanService.bulkAction(bulkActionDto.loanPlans);
   }
 }

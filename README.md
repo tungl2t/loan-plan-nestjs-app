@@ -50,4 +50,4 @@ Before running the application, ensure you have the following installed:
 
 - **GET `/loan-plan`**: Retrieve loan plans.
 
-- **POST `/load-plan/bulk-action`**: Perform create, update, or soft delete operations on multiple loan plans in one request.
+- **POST `/loan-plan/bulk-action`**: Perform create, update, or soft delete operations on multiple loan plans in one request.
